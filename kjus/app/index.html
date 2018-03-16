@@ -29,6 +29,7 @@
       <div class="container container-fluid">
         <div class="logo">
           <a href="#"><img src="images/logo.jpg"><span>KJUS</span></a>
+          <a href="#" class="menu-toggle"><span class="fas fa-bars"></span></a>
         </div>
         <div class="menu-top">
           <ul class="s-menu">
@@ -53,9 +54,9 @@
 
     <div class="support-section s-section support-full-video">
       <div class="video-col">
-        <video width="100%" height="auto" id="header-video" controls poster="">
-          <source src="video/video.mp4" type="video/mp4">
-          <source src="video/video.mp4" type="video/ogg">
+        <video width="100%" height="auto" id="header-video" loop controls poster="">
+          <source src="video/632325766.mp4" type="video/mp4">
+          <source src="video/632325766.mp4" type="video/ogg">
         </video>
       </div>
       <div class="video-overlay">
@@ -87,6 +88,55 @@
           </div>
         </div>
       </section>
+      <div class="product-3d">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="product-info">
+                <img src="images/icon.jpg" />
+                <h2>Collar front</h2>
+                <p>Abor audaecea luptatet doluptaerum et esequunt que.</p>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="holder-3d">
+                <div class="holder-3d__inner">
+                  <img src="images/fish/DSCN0691.JPG" width="210" height="186"
+                  class="reel"
+                  id="image"
+                  data-images="images/fish/DSCN####.JPG|691..702"
+                  data-original="DSCN0691.JPG"
+                  >
+                  <div id="point-1" class="holder-3d__point holder-3d__point--1">
+                    <div class="pulser">
+                      <span class="pulser__1"></span>
+                      <span class="pulser__2"></span>
+                      <span class="pulser__3"></span>
+                    </div>
+                    <div class="holder-3d__text">
+                      <img src="images/icon.jpg" />
+                      <h2>Collar front</h2>
+                      <p>Abor audaecea luptatet doluptaerum et esequunt que.</p>
+                    </div>
+                  </div>
+                  <div id="point-2" class="holder-3d__point holder-3d__point--2">
+                    <div class="pulser">
+                      <span class="pulser__1"></span>
+                      <span class="pulser__2"></span>
+                      <span class="pulser__3"></span>
+                    </div>
+                    <div class="holder-3d__text">
+                      <img src="images/icon.jpg" />
+                      <h2>Test Content 2</h2>
+                      <p>Abor audaecea luptatet doluptaerum et esequunt que. (content 2)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
       <div id="section-3" class="section">
         <h2>100% PROTECTION - 0% RESTRICTION</h2>
         <p class="small-holder">Abor audaecea voluptatet doluptaerum et esequunt que cus ea dolorit aturianiata et labor accaecabo. Net doluptas pelibus et aut fuga.</p>
@@ -290,6 +340,8 @@
     <!-- endbuild -->
     
     <!-- build:js scripts/main.js -->
+    <script src="./scripts/jquery.reel-min.js"></script>
+    <script src="./scripts/jquery.connections.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
   </body>

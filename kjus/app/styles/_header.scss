@@ -11,9 +11,15 @@
 .logo{
   padding: 35px 0;
   span{
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     font-weight: bold;
-    padding-left: 18px;
+    padding-left: 20px;
+    color: #B7B8B9;
+    font-size: 1.3rem;
+  }
+  img,span{
+    display: inline-block;
+    vertical-align: middle;
   }
 }
 
@@ -33,7 +39,7 @@
   padding-bottom: 10px;
   ul{
     li{
-      margin: 0 20px;
+      margin: 0 42px;
       a{
         text-transform: uppercase;
         font-size: .8rem;
@@ -48,21 +54,21 @@
 }
 
 .support-full-video{
-  padding-top: 56.25%;
+  padding-top: 45%;
   position: relative;
   overflow: hidden;
   margin-top: -17px;
 }
 .video-col{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%; 
-  overflow: hidden;
+  // position: absolute;
+  // top: 0;
+  // bottom: 0;
+  // width: 100%;
+  // height: 100%; 
+  // overflow: hidden;
   video{
     width: 100%;
-    height: 100%;
+    //height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -99,9 +105,10 @@
     }
     .button{
       position: absolute;
-      bottom: 130px;
+      bottom: 100px;
       left: 50%;
       transform: translateX(-50%);
+      opacity: .6;
     }
   }
   .play-trigger{
@@ -118,6 +125,7 @@
     width: 100px;
     line-height: 100px;
     text-align: center;
+    opacity: .6;
     .fas{
       position: relative;
       transition: none;
@@ -139,3 +147,78 @@
     }
   }
 }
+
+.menu-toggle{
+  display: none;
+}
+
+@media (min-width: 992px){}
+@media (max-width: 1300px){
+  
+  .video-overlay .play-trigger{
+    top: 58%;
+    font-size: 1.5rem;
+    height: 75px;
+    width: 75px;
+    line-height: 75px;
+  }
+}
+
+@media (max-width: 991px){
+  .logo{
+    position: relative;
+    text-align: left;
+    padding: 20px 0;
+  }
+  .support-full-video{
+    background: url(../images/sample.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  .video-col{
+    display: none;
+  }
+  .menu-top{
+    position: static;
+    text-align: center;
+    padding-bottom: 18px;
+    ul{
+      li{
+        margin: 0 12px;
+      }
+    }
+  }
+  .menu-toggle{
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 18px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .main-menu{
+    background: $font-1;
+    margin: 0 -15px;
+    display: none;
+    ul{
+      list-style: none;
+      li{
+        margin: 0;
+        display: block;
+        a{
+          padding: 10px 15px;
+          color: #000;
+          border-bottom: 1px solid #f19e68;
+          border-top: 1px solid #fbc3a0;
+          &:hover,&:focus{
+            color: #fff;
+            background: $gray-dark;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px){}
+@media (min-width: 768px) and (max-width: 991px){}
+
